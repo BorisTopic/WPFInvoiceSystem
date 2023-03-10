@@ -1,0 +1,18 @@
+﻿<Window x:Class="GroupAssignment.Search.wndSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupAssignment.Search"
+        mc:Ignorable="d"
+        Title="wndSearch" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="dgTBD" HorizontalAlignment="Left" Height="228" Margin="200,10,0,0" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.509,0.528" CanUserAddRows="False" IsReadOnly="True"/>
+        <ComboBox Name="cbInvoiceNumber"  HorizontalAlignment="Left" Margin="144,276,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbInvoiceNumber_SelectionChanged"/>
+        <ComboBox Name="cbInvoiceDate" HorizontalAlignment="Left" Margin="343,276,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbInvoiceDate_SelectionChanged"/>
+        <ComboBox Name="cbTotalCharge" HorizontalAlignment="Left" Margin="539,276,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbTotalCharge_SelectionChanged"/>
+        <Button Name="bSelectInvoice" Content="Select Invoice" HorizontalAlignment="Left" Margin="249,335,0,0" VerticalAlignment="Top" Width="89" Height="34" Click="bSelectInvoice_Click"/>
+        <Button Name="bClearSelection" Content="Clear Selection" HorizontalAlignment="Left" Margin="456,335,0,0" VerticalAlignment="Top" Width="89" Height="34" Click="bClearSelection_Click"/>
+
+    </Grid>
+</Window>
